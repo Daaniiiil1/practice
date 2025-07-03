@@ -1,14 +1,43 @@
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\Admin-PC\Desktop\~mods\practice\bin\Debug\net8.0\ConsoleApp1.exe
+C:\Users\Admin-PC\Desktop\~mods\practice\bin\Debug\net8.0\ConsoleApp1.deps.json
+C:\Users\Admin-PC\Desktop\~mods\practice\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+C:\Users\Admin-PC\Desktop\~mods\practice\bin\Debug\net8.0\ConsoleApp1.dll
+C:\Users\Admin-PC\Desktop\~mods\practice\bin\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.sourcelink.json
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.dll
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\refint\ConsoleApp1.dll
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\Admin-PC\Desktop\~mods\practice\obj\Debug\net8.0\ref\ConsoleApp1.dll

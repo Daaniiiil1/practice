@@ -9,6 +9,7 @@ namespace QuickSortAlgorithm
         private const string HistoryFilePath = "sort_history.txt";
         private const string InputArrayFilePath = "input_array.txt";
         private static readonly Random random = new Random();
+        private static PivotSelectionStrategy pivotStrategy = PivotSelectionStrategy.Random;
 
         static void Main()
         {
@@ -21,7 +22,8 @@ namespace QuickSortAlgorithm
                 Console.WriteLine("3. Рандомный массив");
                 Console.WriteLine("4. Показать историю сортировок");
                 Console.WriteLine("5. Очистить историю");
-                Console.WriteLine("6. Выход");
+                Console.WriteLine("6. Изменить стратегию выбора pivot");
+                Console.WriteLine("7. Выход");
                 Console.Write("Выберите действие: ");
 
                 string? choice = Console.ReadLine();
@@ -44,6 +46,9 @@ namespace QuickSortAlgorithm
                         ClearHistory();
                         break;
                     case "6":
+                        ChangePivotStrategy();
+                        break;
+                    case "7":
                         return;
                     case null:
                         Console.WriteLine("Ввод не распознан. Попробуйте снова.");
@@ -55,6 +60,38 @@ namespace QuickSortAlgorithm
 
                 Console.WriteLine();
             }
+        }
+
+        private static void ChangePivotStrategy()
+        {
+            Console.WriteLine("Выберите стратегию выбора pivot:");
+            Console.WriteLine("1. Случайный элемент (по умолчанию)");
+            Console.WriteLine("2. Первый элемент");
+            Console.WriteLine("3. Последний элемент");
+            Console.WriteLine("4. Средний элемент");
+            Console.Write("Ваш выбор: ");
+
+            string? choice = Console.ReadLine();
+            switch (choice)
+            {
+                case "1":
+                    pivotStrategy = PivotSelectionStrategy.Random;
+                    break;
+                case "2":
+                    pivotStrategy = PivotSelectionStrategy.First;
+                    break;
+                case "3":
+                    pivotStrategy = PivotSelectionStrategy.Last;
+                    break;
+                case "4":
+                    pivotStrategy = PivotSelectionStrategy.Middle;
+                    break;
+                default:
+                    Console.WriteLine("Неверный выбор. Используется случайный элемент.");
+                    pivotStrategy = PivotSelectionStrategy.Random;
+                    break;
+            }
+            Console.WriteLine($"Выбрана стратегия: {pivotStrategy}");
         }
 
         private static string FormatNumber(double number)
@@ -120,7 +157,7 @@ namespace QuickSortAlgorithm
                 string arrayStr = string.Join(" ", Array.ConvertAll(array, x => FormatNumber(x)));
                 Console.WriteLine($"Сгенерированный массив: {string.Join(", ", Array.ConvertAll(array, x => FormatNumber(x)))}");
 
-                ProcessAndSortArray(arrayStr);
+                ProcessAndSortArray(arrayStr, "Рандомный массив");
             }
             catch (Exception ex)
             {
@@ -139,7 +176,7 @@ namespace QuickSortAlgorithm
                 return;
             }
 
-            ProcessAndSortArray(input.Replace(',', '.'));
+            ProcessAndSortArray(input.Replace(',', '.'), "Ручной ввод");
         }
 
         private static void SortFromFile()
@@ -154,7 +191,7 @@ namespace QuickSortAlgorithm
 
                 string input = File.ReadAllText(InputArrayFilePath);
                 Console.WriteLine($"Содержимое файла: {input}");
-                ProcessAndSortArray(input.Replace(',', '.'));
+                ProcessAndSortArray(input.Replace(',', '.'), "Сортировка из файла");
             }
             catch (Exception ex)
             {
@@ -162,7 +199,7 @@ namespace QuickSortAlgorithm
             }
         }
 
-        private static void ProcessAndSortArray(string input)
+        private static void ProcessAndSortArray(string input, string sortType)
         {
             try
             {
@@ -178,16 +215,42 @@ namespace QuickSortAlgorithm
                 double[] original = (double[])numbers.Clone();
 
                 DateTime start = DateTime.Now;
-                double[] sorted = QuickSortAlgorithm.QuickSort(numbers, 0, numbers.Length - 1);
+                double[] sorted = QuickSortAlgorithm.QuickSort(numbers, 0, numbers.Length - 1, pivotStrategy);
                 TimeSpan time = DateTime.Now - start;
 
                 Console.WriteLine($"Отсортированный массив: {string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}");
                 Console.WriteLine($"Время сортировки: {time.TotalMilliseconds} мс");
+                Console.WriteLine($"Использованная стратегия pivot: {pivotStrategy}");
+
+                string outputFileName = string.Empty;
+                if (sortType != "Сортировка из файла")
+                {
+                    Console.Write("Введите имя файла для сохранения результата (без расширения): ");
+                    string? fileName = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(fileName))
+                    {
+                        outputFileName = fileName + ".txt";
+                        try
+                        {
+                            File.WriteAllText(outputFileName, string.Join(" ", Array.ConvertAll(sorted, x => FormatNumber(x))));
+                            Console.WriteLine($"Результат сохранен в файл: {outputFileName}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Ошибка при сохранении файла: {ex.Message}");
+                        }
+                    }
+                }
 
                 File.AppendAllLines(HistoryFilePath, new[]
                 {
-            $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: [{string.Join(", ", Array.ConvertAll(original, x => FormatNumber(x)))}] -> [{string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}] ({time.TotalMilliseconds} мс)"
-        });
+                    $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} | Тип: {sortType} | " +
+                    $"Исходный массив: [{string.Join(", ", Array.ConvertAll(original, x => FormatNumber(x)))}] | " +
+                    $"Отсортированный массив: [{string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}] | " +
+                    $"Время: {time.TotalMilliseconds} мс | " +
+                    $"Стратегия pivot: {pivotStrategy} | " +
+                    $"Файл результата: {(string.IsNullOrEmpty(outputFileName) ? "не сохранен" : outputFileName)}"
+                });
             }
             catch (FormatException)
             {
@@ -209,11 +272,12 @@ namespace QuickSortAlgorithm
                     return;
                 }
 
-                Console.WriteLine("История сортировок:");
-                foreach (var line in File.ReadLines(HistoryFilePath))
-                {
-                    Console.WriteLine(line);
-                }
+                string historyContent = File.ReadAllText(HistoryFilePath);
+                string historyFileName = $"sort_history_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
+                File.WriteAllText(historyFileName, historyContent);
+
+                Console.WriteLine($"История сортировок (также сохранена в файл {historyFileName}):");
+                Console.WriteLine(historyContent);
             }
             catch (Exception ex)
             {
@@ -240,5 +304,13 @@ namespace QuickSortAlgorithm
                 Console.WriteLine($"Ошибка: {ex.Message}");
             }
         }
+    }
+
+    public enum PivotSelectionStrategy
+    {
+        Random,
+        First,
+        Last,
+        Middle
     }
 }
