@@ -177,14 +177,17 @@ namespace QuickSortAlgorithm
 
                 double[] original = (double[])numbers.Clone();
 
+                DateTime start = DateTime.Now;
                 double[] sorted = QuickSortAlgorithm.QuickSort(numbers, 0, numbers.Length - 1);
+                TimeSpan time = DateTime.Now - start;
 
                 Console.WriteLine($"Отсортированный массив: {string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}");
+                Console.WriteLine($"Время сортировки: {time.TotalMilliseconds} мс");
 
                 File.AppendAllLines(HistoryFilePath, new[]
                 {
-                    $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: [{string.Join(", ", Array.ConvertAll(original, x => FormatNumber(x)))}] -> [{string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}]"
-                });
+            $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: [{string.Join(", ", Array.ConvertAll(original, x => FormatNumber(x)))}] -> [{string.Join(", ", Array.ConvertAll(sorted, x => FormatNumber(x)))}] ({time.TotalMilliseconds} мс)"
+        });
             }
             catch (FormatException)
             {
