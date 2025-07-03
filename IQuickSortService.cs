@@ -4,6 +4,8 @@ namespace QuickSortAlgorithm
 {
     public static class QuickSortAlgorithm
     {
+        private static readonly Random rand = new Random();
+
         public static T[] QuickSort<T>(T[] array, int minIndex, int maxIndex) where T : IComparable<T>
         {
             if (array == null)
@@ -22,6 +24,9 @@ namespace QuickSortAlgorithm
 
         private static int GetPivotIndex<T>(T[] array, int minIndex, int maxIndex) where T : IComparable<T>
         {
+            int randomIndex = rand.Next(minIndex, maxIndex + 1);
+            Swap(ref array[randomIndex], ref array[maxIndex]);
+
             int pivot = minIndex - 1;
 
             for (int i = minIndex; i <= maxIndex; i++)
