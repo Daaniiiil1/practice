@@ -1,70 +1,14 @@
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 E:\proekt\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
-C:\Users\pupok\Downloads\Telegram Desktop\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
-E:\Internet\ориг\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
-E:\Internet\ориг\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
-E:\Internet\ориг\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
-E:\Internet\ориг\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
-E:\Internet\ориг\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
-E:\Internet\ориг\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
-E:\project\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
-E:\project\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
-E:\project\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
-E:\project\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
-E:\project\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
-E:\project\algoritm\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
-E:\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
-E:\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
-E:\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
-E:\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
-E:\algoritm\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
-E:\algoritm\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll

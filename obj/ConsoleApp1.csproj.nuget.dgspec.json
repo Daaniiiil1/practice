@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\algoritm\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "E:\\proekt\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "E:\\algoritm\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "E:\\proekt\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\algoritm\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "E:\\proekt\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "E:\\algoritm\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "E:\\proekt\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\Admin-PC\\.nuget\\packages\\",
-        "outputPath": "E:\\algoritm\\ConsoleApp1\\obj\\",
+        "outputPath": "E:\\proekt\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

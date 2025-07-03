@@ -2,42 +2,31 @@
 
 namespace QuickSortAlgorithm
 {
-    class Program
+    public static class QuickSortAlgorithm
     {
-        static void Main()
+        public static T[] QuickSort<T>(T[] array, int minIndex, int maxIndex) where T : IComparable<T>
         {
-            int[] inputArray = { 9, 12, 9, 2, 17, 1, 6 };
+            if (array == null)
+                throw new ArgumentNullException(nameof(array));
 
-            int[] sortedArray = QuickSort(inputArray, 0, inputArray.Length - 1);
-
-            Console.WriteLine($"Sorted array: {string.Join(", ", sortedArray)}");
-
-            Console.ReadLine();
-        }
-
-        private static int[] QuickSort(int[] array, int minIndex, int maxIndex)
-        {
             if (minIndex >= maxIndex)
-            {
                 return array;
-            }
 
             int pivotIndex = GetPivotIndex(array, minIndex, maxIndex);
 
             QuickSort(array, minIndex, pivotIndex - 1);
-
             QuickSort(array, pivotIndex + 1, maxIndex);
 
             return array;
         }
 
-        private static int GetPivotIndex(int[] array, int minIndex, int maxIndex)
+        private static int GetPivotIndex<T>(T[] array, int minIndex, int maxIndex) where T : IComparable<T>
         {
             int pivot = minIndex - 1;
 
             for (int i = minIndex; i <= maxIndex; i++)
             {
-                if (array[i] < array[maxIndex])
+                if (array[i].CompareTo(array[maxIndex]) < 0)
                 {
                     pivot++;
                     Swap(ref array[pivot], ref array[i]);
@@ -50,13 +39,9 @@ namespace QuickSortAlgorithm
             return pivot;
         }
 
-        private static void Swap(ref int leftItem, ref int rightItem)
+        private static void Swap<T>(ref T leftItem, ref T rightItem)
         {
-            int temp = leftItem;
-
-            leftItem = rightItem;
-
-            rightItem = temp;
+            (leftItem, rightItem) = (rightItem, leftItem);
         }
     }
 }
