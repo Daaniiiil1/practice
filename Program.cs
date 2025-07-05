@@ -272,12 +272,8 @@ namespace QuickSortAlgorithm
                     return;
                 }
 
-                string historyContent = File.ReadAllText(HistoryFilePath);
-                string historyFileName = $"sort_history_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
-                File.WriteAllText(historyFileName, historyContent);
-
-                Console.WriteLine($"История сортировок (также сохранена в файл {historyFileName}):");
-                Console.WriteLine(historyContent);
+                Console.WriteLine("История сортировок:");
+                Console.WriteLine(File.ReadAllText(HistoryFilePath));
             }
             catch (Exception ex)
             {
